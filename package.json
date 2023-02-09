@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "set NODE_ENV=development&&webpack serve",
-    "build:dev": "set NODE_ENV=development&&webpack",
-    "build-prod": "set NODE_ENV=production&&webpack",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build-dev": "webpack",
+    "build-prod": "webpack --node-env=production",
     "clear": "rd /s /q dist"
   },
   "repository": {
